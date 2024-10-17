@@ -1,7 +1,7 @@
 function getJoke() {
         try {
             // Fetch the joke from the JokeAPI
-            const response = fetch('https://v2.jokeapi.dev/joke/Any');
+            const response = fetch('https://v2.jokeapi.dev/joke/?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single');
             const data = response.json();
 
             let jokeText = '';
