@@ -4,15 +4,7 @@ function getJoke() {
             const response = fetch('https://v2.jokeapi.dev/joke/?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single');
             const data = response.json();
 
-            let jokeText = '';
-
-            // Check if it's a single or two-part joke
-            if (data.type === 'single') {
-                jokeText = data.joke; // For single jokes
-            } else {
-                jokeText = `${data.setup} - ${data.delivery}`; // For two-part jokes
-            }
-
+            let jokeText = data.joke;
             // Update the p tag with the joke
             document.getElementById('joke').innerText = jokeText;
 
