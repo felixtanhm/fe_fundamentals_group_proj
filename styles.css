@@ -1,20 +1,32 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 div {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    padding: 8px;
-    color: white;
-    background-color: black;
-    border-radius: 8px;
-    font-weight: bold;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  position: fixed;
+}
+
+#joke {
+}
+
+img {
+  width: 20%;
 }
